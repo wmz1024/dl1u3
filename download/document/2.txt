@@ -1,0 +1,1 @@
+file://./globalroot/device/condrv/kernelconnect
