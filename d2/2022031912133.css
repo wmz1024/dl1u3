@@ -1,0 +1,56 @@
+* {
+  font-family: sans-serif;
+  letter-spacing: -5px;
+  cursor: grabbing;
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+}
+* ::selection {
+  background: none;
+}
+
+body {
+  background: #3590f3;
+  overflow: hidden;
+  height: 100vh;
+}
+
+span {
+  width: 100vw;
+  padding: 5rem;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 4rem;
+  text-align: center;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  span {
+    padding: 5px;
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+span.fill {
+  color: #fff;
+  z-index: 0;
+}
+span.outline {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+  z-index: 2;
+}
+
+#circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: #3590f3;
+  border: 20px solid #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px);
+}
